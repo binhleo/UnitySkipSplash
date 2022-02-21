@@ -38,14 +38,12 @@ public class SkipSplash
         Application.focusChanged -= Application_focusChanged;
         SplashScreen.Stop(SplashScreen.StopBehavior.StopImmediate);
     }
-
 #else
     private static void AsyncSkip()
     {
         SplashScreen.Stop(SplashScreen.StopBehavior.StopImmediate);
     }
 #endif
-
 }
 #endif
 ```
